@@ -1,0 +1,53 @@
+{
+  "name": "folderbsdp",
+  "version": "1.0.0",
+  "description": "FolderBsdp algorithm utilizes bsdp algorithm and file operations to provides diffing and patching capacities for two folders",
+  "keywords": [
+    "folderbsdp",
+    "diff",
+    "bsdiff"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module":"./dist/index.mjs",
+  "exports":{
+    ".":{
+      "require":"./lib/index.js",
+      "import":"./lib/index.mjs"
+    }
+  },
+  "scripts": {
+    "build-fast": "tsup src/index.ts --format cjs,esm",
+    "build": "npm run build-fast -- --dts-resolve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peichen3141/FolderBsdp.git"
+  },
+  "author": "Pei Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peichen3141/FolderBsdp/issues"
+  },
+  "homepage": "https://github.com/peichen3141/FolderBsdp#readme",
+  "dependencies": {
+    "bsdp": "1.2.0",
+    "extract-zip": "2.0.1",
+    "fs-extra": "10.0.0",
+    "path": "0.12.7",
+    "walker": "1.0.8",
+    "archiver": "5.3.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "5.3.1",
+    "@types/fs-extra": "9.0.13",
+    "@types/node": "16.11.12",
+    "rimraf": "3.0.2",
+    "typescript": "4.5.2",
+    "tsup": "6.0.1",
+    "tslib": "2.4.0"
+  },
+  "files": [
+    "lib"
+  ]
+}
