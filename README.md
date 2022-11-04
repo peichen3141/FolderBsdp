@@ -11,7 +11,7 @@ This package supports ESM and CommonJS. We uses ESM here as the example.
 
 ## Install
 ```sh
-npm install FolderBsdp --save
+npm install folderbsdp --save
 ```
 ## Use API
 ```typescript
