@@ -12,11 +12,12 @@
   "module":"./dist/index.mjs",
   "exports":{
     ".":{
-      "require":"./lib/index.js",
-      "import":"./lib/index.mjs"
+      "require":"./dist/index.js",
+      "import":"./dist/index.mjs"
     }
   },
   "scripts": {
+    "prepare":"npm run build",
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "npm run build-fast -- --dts-resolve"
   },
@@ -48,6 +49,6 @@
     "tslib": "2.4.0"
   },
   "files": [
-    "lib"
+    "dist"
   ]
 }
