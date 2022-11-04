@@ -1,6 +1,6 @@
 {
   "name": "folderbsdp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FolderBsdp algorithm utilizes bsdp algorithm and file operations to provides diffing and patching capacities for two folders",
   "keywords": [
     "folderbsdp",

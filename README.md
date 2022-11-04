@@ -1,5 +1,6 @@
 # What is FolderBsdp?
 FolderBsdp is an algorithm which utilizes bsdp algorithm and file operations to provides diffing and patching capacities for two folders.
+Bsdp is a famous algorithm which is open source, known as bsdiff. The name bsdp is the npm module name, as well as the combination between bsdiff and bspatch. Bsdp can diff two files but does not support folders. FolderBsdp adds the prefix Folder while maintaining the API almost the same.
 
 # What does FolderBsdp do?
 FolderBsdp compare two folders and provide the patch file (which is a zip actually). In the patch, it contains the resources to help modifying folder A's content to become folder B's content, including adding/removing directories and files, changing file content. In another word, the patch file store the difference between two folders.
