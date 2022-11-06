@@ -2,7 +2,6 @@ import path from "path";
 import fs from "fs-extra";
 import extract from "extract-zip";
 import crypto from "crypto";
-// @ts-ignore
 import bsdp from "bsdp";
 
 const OPERATION_ACTION = {
@@ -36,9 +35,9 @@ export function folderBspatch(
   return extract(patchPath, { dir: fpatchUnzippedDir })
     .then(() => {
       const rawData = fs.readFileSync(
-        path.join(fpatchUnzippedDir, "config.json")
+        path.join(fpatchUnzippedDir, "config.json"),
+        "utf8"
       );
-      // @ts-ignore
       const config = JSON.parse(rawData);
       if (config.name !== "FolderBsdp" || config.version !== 1) {
         throw new Error("The config file is not FolderBsdp version 1");

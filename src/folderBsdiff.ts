@@ -1,9 +1,7 @@
-// @ts-ignore
 import walker from "walker";
 import path from "path";
 import fs from "fs-extra";
 import crypto from "crypto";
-// @ts-ignore
 import bsdp from "bsdp";
 import archiver from "archiver";
 

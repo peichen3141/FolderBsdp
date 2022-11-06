@@ -16,7 +16,7 @@ npm install folderbsdp --save
 ```
 ## Use API
 ```typescript
-import FolderBsdp from "FolderBsdp"
+import FolderBsdp from "folderbsdp"
 FolderBsdp.diff("./Users/myname/Documents/Afolder", "./Users/myname/Documents/Bfolder", "./Users/myname/Documents/ABdifference.patch")
 FolderBsdp.patch("./Users/myname/Documents/Afolder", "./Users/myname/Documents/Bfolder", "./Users/myname/Documents/ABdifference.patch")
 ```
